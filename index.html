@@ -1,0 +1,159 @@
+<!--Alumna: Ana Zafra Vallejo-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>HAR Roquetas - Hospital de Alta Resolución</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--CABECERA-->
+    <header>
+        <div id="logotipo">
+            <img src="img/logo.jpg" alt="Logotipo HAR Roquetas">
+            <h1>HAR Roquetas</h1>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#horario">Horario</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--CUERPO-->
+    <main>
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <img src="img/hospital.jpg" alt="Hospital Roquetas" class="banner">
+            <p>Bienvenidos al Hospital de Alta Resolución de Roquetas de Mar. Calidad asistencial y cercanía.</p>
+            <ul id="lista-servicios">
+                <li>Atención Primaria y Especializada</li>
+                <li>Diagnóstico por Imagen</li>
+                <li>Urgencias 24 horas</li>
+                <li>Cirugía General</li>
+            </ul>
+        </section>
+
+        <div id="mensaje-bienvenida"></div>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <div class="galeria">
+                <div class="servicios">
+                    <img src="img/atencionprimaria.jpg" alt="Atención Primaria">
+                    <p>Atención Primaria</p>
+                </div>
+                <div class="servicios">
+                    <img src="img/pediatria.jpg" alt="Pediatría">
+                    <p>Pediatría</p>
+                </div>
+                <div class="servicios">
+                    <img src="img/urgencias.jpg" alt="Urgencias">
+                    <p>Urgencias</p>
+                </div>
+                <div class="servicios">
+                    <img src="img/cirugia.jpg" alt="Cirugía">
+                    <p>Cirugía</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="horario">
+            <h2 id="titulo-horario">Horario</h2>
+            <table>
+                <caption>Horario de Consultas y Especialidades</caption>
+                <thead>
+                    <tr>
+                        <th>Departamento</th>
+                        <th>Días</th>
+                        <th>Mañana</th>
+                        <th>Tarde</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Consultas Externas</td>
+                        <td>Lunes a Viernes</td>
+                        <td colspan="2">08:00 - 20:00 (Continuado)</td>
+                    </tr>
+                    <tr>
+                        <td>Sábados</td>
+                        <td>09:00 - 14:00</td>
+                        <td>Cerrado</td>
+                    </tr>
+                    <tr>
+                        <td>Urgencias</td>
+                        <td>Lunes a Domingo</td>
+                        <td colspan="2">Abierto 24 Horas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="#">
+                <label>Nombre y Apellidos:</label>
+                <input type="text" name="nombre" required>
+
+                <label>Email:</label>
+                <input type="email" name="email" required>
+
+                <label>Teléfono:</label>
+                <input type="tel" name="tel">
+
+                <label>Motivo de la consulta:</label>
+                <select name="motivo">
+                    <option value="primaria">Atención Primaria</option>
+                    <option value="pediatria">Pediatría</option>
+                    <option value="especialidades">Especialidades</option>
+                    <option value="urgencias">Urgencias</option>
+                    <option value="cirugia">Cirugía</option>
+                    <option value="otros">Otros</option>
+                </select>
+
+                <label>Comentarios:</label>
+                <textarea name="comentarios" rows="2"></textarea>
+
+                <p>Preferencia de contacto:</p>
+                <input type="radio" id="p1" name="pref" value="email"> <label for="p1" class="inline">Email</label>
+                <input type="radio" id="p2" name="pref" value="tel"> <label for="p2" class="inline">Teléfono</label>
+
+                <label>Fecha de la cita:</label>
+                <input type="date" name="fecha">
+                <label>Hora:</label>
+                <input type="time" name="hora">
+
+                <div class="checks">
+                    <input type="checkbox" id="c1" required> <label for="c1" class="inline">Aceptar política de privacidad</label><br>
+                    <input type="checkbox" id="c2"> <label for="c2" class="inline">Aceptar noticias y promociones</label>
+                </div>
+
+                <button type="submit">Enviar</button> 
+            </form>
+        </section>
+    </main>
+    <!--PIE DE PÁGINA-->
+    <footer>
+        <div class="info-hospital">
+            <p><strong>Hospital de Alta Resolución de Roquetas de Mar</strong></p>
+            <p>Calle Esperanza 5, 04740 Roquetas de Mar, Almería</p>
+            <p>Tel: 950 46 78 23 / 951 86 54 28 | Email: info@harroquetas.es</p>
+        </div>
+        <div class="info-autor">
+            <p>Autora: Ana Zafra Vallejo | Módulo: LMSGI | Curso: 2025-26</p>
+        </div>
+        <hr>
+        <div class="iconos-valida">
+            <a href="feed/rss.xml"><img src="img/rss.png" alt="RSS" width="32"></a>
+            <a href="img/validacionrss.png"><img src="img/w3c.png" alt="Validacion RSS" width="32"></a>
+            <a href="img/validacionhtml5.png"><img src="img/html5.png" alt="Validacion HTML" width="32"></a>
+            <a href="img/validacioncss.png"><img src="img/css.png" alt="Validacion CSS" width="32"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

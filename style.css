@@ -1,0 +1,202 @@
+/* Alumna: Ana Zafra Vallejo
+   Gama de colores utilizada: #005a8d (Azul), #e0f7fa (Celeste), #ffffff (Blanco)
+*/
+
+/* ESTILOS GENERALES */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ENCABEZADO */
+header {
+    background-color: #005a8d;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logotipo {
+    display: flex;
+    align-items: center;
+}
+
+#logotipo img {
+    height: 50px;       
+    width: auto;        
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+/* MENÚ  */
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.menu li a {
+    color: #005a8d;
+    text-decoration: none;
+    background-color: white;
+    display: block;
+    width: 110px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    background-color: #007bbd;
+    color: white;
+    border: 1px solid white;
+}
+
+/*  SECCIÓN INICIO  */
+.banner {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    display: block;
+    object-fit: cover;
+}
+
+#lista-servicios {
+    list-style-type: square; 
+    margin: 20px 40px;
+}
+
+/*  SECCIÓN SERVICIOS */
+.galeria {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.servicios {
+    display: inline-block;
+    width: 40%;
+    margin: 15px 2%;
+    vertical-align: top;
+}
+
+.servicios img {
+    width: 100%; 
+    max-width: 300px; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease;
+}
+
+.servicios img:hover {
+    transform: scale(1.1); 
+}
+
+.servicios p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #005a8d;
+}
+
+/* SECCIÓN HORARIO  */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #005a8d;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    border: 2px solid #005a8d;
+    padding: 10px;
+    text-align: center;
+}
+
+/* SECCIÓN CONTACTO */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #005a8d;
+}
+
+form label.inline {
+    display: inline;
+    font-weight: normal;
+    color: #333;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"],
+select, 
+textarea,
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #005a8d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #007bbd;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.info-hospital p, .info-autor p {
+    margin: 5px 0;
+}
+
+.iconos-valida img {
+    margin: 10px;
+    vertical-align: middle;
+}
